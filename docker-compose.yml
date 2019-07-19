@@ -2,14 +2,14 @@ version: '3'
 
 services:
   php:
-    build: ./backend/php
+    build: ./php
     expose:
       - 9000
     volumes:
       - ./app:/var/www/html
 
   nginx:
-    build: ./backend/nginx
+    build: ./nginx
     ports:
       - 80:80
     volumes:

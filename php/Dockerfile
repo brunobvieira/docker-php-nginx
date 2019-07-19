@@ -4,7 +4,7 @@ RUN apk update && apk upgrade \
     # if you want mysql
     #&& docker-php-ext-install mysqli pdo pdo_mysql \
     # if you want mongodb
-    && apk add libmcrypt-dev autoconf openssl-dev make g++\
+    && apk add libmcrypt-dev autoconf openssl-dev make g++ \
     && pecl install mongodb \
     && docker-php-ext-enable mongodb
 
